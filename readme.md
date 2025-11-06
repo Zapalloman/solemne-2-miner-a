@@ -1,5 +1,21 @@
 # DECISIONES DE MODELADO
 
+## 🌐 Dashboard Interactivo
+
+**Visualiza todos los resultados en vivo:**  
+👉 **https://zapallo.shinyapps.io/congestion-santiago-ml/**
+
+El dashboard incluye:
+- 📊 Comparación de modelos con gráficos interactivos
+- ⏱️ Tiempos de entrenamiento por algoritmo
+- 📈 Coeficientes de regresión lineal
+- 🌳 Visualización del árbol de decisión
+- 🧠 Arquitectura de la red neuronal
+- 📉 Gráficos de residuales e importancia de variables
+- 📋 Tabla completa de validación en datos de prueba
+
+---
+
 ## Tipo de Problema
 
 **REGRESIÓN (forzado por #clases)**: La variable objetivo `Duration_hrs` fue detectada automáticamente. Se identificó como regresión debido a que presenta valores numéricos continuos con alta variabilidad (118 valores únicos).
@@ -106,9 +122,14 @@ Hemos desarrollado un sistema que analiza 24 características del tráfico (ubic
 - `importancia_variables.png` - Top 15 features más importantes
 - `knn_residuales.png` - Gráfico de residuales del modelo K-NN standalone
 
+✅ **Dashboard Web:**
+- `app.R` - Aplicación Shiny interactiva con todas las visualizaciones
+- **URL en vivo:** https://zapallo.shinyapps.io/congestion-santiago-ml/
+
 ---
 
 **Modelo Ganador:** K-NN  
 **RMSE:** 0.9348  
+**Dashboard:** https://zapallo.shinyapps.io/congestion-santiago-ml/  
 **Fecha:** Noviembre 2025  
 **Dataset:** Congestión Santiago (10,001 observaciones de 76,140 originales)
